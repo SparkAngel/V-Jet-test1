@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+        <title>Vue.js Task2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+        <div id="app">
+            <h2 class="app_h2">Task2</h2>
+            <div class="app_value">
+                    <p 
+                    class="value" 
+                    :class="{'green' : valueCurrent % 2 == 0, 
+                            'red' : valueCurrent % 2 !== 0, }"
+                    >
+                    {{valueCurrent}}
+                </p> 
+            </div>
+            
+            <div class="app_form">
+            <input class="app_form-input" v-model="value" type="number" min="1" max="100">
+            </div> 
+
+            <button class="app_form-button" @click="addValue" :disabled="value == ''">Set</button>
+            <button class="app_form-button" @click="removeValue">Clear</button>
+            
+    
+        </div>
+		<script src="app.js"></script>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,55 @@
+.app_h2 {
+    text-align: center;
+}
+
+.app_value {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.app_form {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.app_form-button {
+    margin: 30px auto;
+    width: 400px;
+    display: flex;
+    color: #2d2d2d;
+    padding: 14px 24px 12px;
+    font-family: "Helvetica";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+.app_form-button:disabled {
+    color: #dddddd;
+}
+
+.app_form-input {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
